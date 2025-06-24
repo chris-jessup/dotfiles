@@ -146,6 +146,8 @@ alias gs="git status"
 alias gcm="git commit"
 alias gdt="git difftool"
 alias jpath="jq -r 'paths(scalars | true) as \$p  | [ ( [ \$p[] | tostring ] | join(\".\") ), ( getpath(\$p) | tojson )] | join(\": \")'"
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+
 
 export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/eksconfig
 

@@ -10,6 +10,9 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+" Syntax highlighting
+syntax on
+
 set mouse=a
 
 " Get rid of annoying errors
@@ -18,4 +21,4 @@ cnoreabbrev Wq wq
 cnoreabbrev Wqa wqa
 
 " Open terminal in current windoe
-cnoreabbrev term terminal ++curwin
+cnoreabbrev term vertical terminal
